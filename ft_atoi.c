@@ -6,7 +6,7 @@
 /*   By: mel-jana <mel-jana@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 11:45:47 by mel-jana          #+#    #+#             */
-/*   Updated: 2026/10/14 12:30:57 by mel-jana         ###   ########.fr       */
+/*   Updated: 2026/10/17 21:28:14 by mel-jana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,4 @@ int ft_atoi(const char *nptr)
     }
     
     return (result * sign);
-}
-
-int main(void)
-{
-    printf("%d\n", ft_atoi("9223372036854775806"));
-    printf("%d\n", atoi("9223372036854775806"));
-    return 0;
 }
