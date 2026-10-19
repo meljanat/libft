@@ -6,14 +6,20 @@
 /*   By: mel-jana <mel-jana@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 21:29:17 by mel-jana          #+#    #+#             */
-/*   Updated: 2026/10/17 21:40:03 by mel-jana         ###   ########.fr       */
+/*   Updated: 2026/10/19 10:38:28 by mel-jana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    while (n)
-        ((unsigned char *)s)[--n] = '\0';
+	unsigned char	*str;
+
+	str = (unsigned char *)s;
+	while (n > 0)
+	{
+		str[n - 1] = '\0';
+		n--;
+	}
 }
